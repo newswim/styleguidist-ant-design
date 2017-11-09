@@ -32,7 +32,7 @@ class AutoComplete extends React.Component {
   static propTypes = {
     /** Show clear button, effective in multiple mode only. */
     allowClear: bool,
-    /** backfill selected item the input when using keyboard */
+    /** backfill selected item the input when using keyboard. */
     backfill: bool,
     /** (for customize input element)	customize input element <br /> :: `HTMLInputElement` / `HTMLTextAreaElement` / `React.ReactElement`	`<Input />` */
     childrenOfCustom: element,
