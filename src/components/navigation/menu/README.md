@@ -1,0 +1,5 @@
+Menu example:
+
+```js
+<Menu />
+```

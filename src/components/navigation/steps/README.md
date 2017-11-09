@@ -1,0 +1,5 @@
+Steps example:
+
+```js
+<Steps />
+```
