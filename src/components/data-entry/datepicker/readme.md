@@ -1,0 +1,5 @@
+Basic DatePicker
+
+```js
+<DatePicker />
+```
