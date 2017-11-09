@@ -6,6 +6,7 @@ const rewireLess = require('react-app-rewire-less')
 // const util = require('util')
 
 module.exports = {
+  styleguideDir: 'docs',
   // components: './node_modules/antd/es/**/index.js',
   components: 'src/components/**/*.js',
   dangerouslyUpdateWebpackConfig(webpackConfig, env) {
