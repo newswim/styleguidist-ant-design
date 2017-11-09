@@ -1,5 +1,5 @@
 import React from 'react'
-import { array, bool, func, string } from 'prop-types'
+import { arrayOf, bool, func, string } from 'prop-types'
 import { Menu, Dropdown as AntDDropdown, Icon } from 'antd'
 
 const menu = (
@@ -40,7 +40,7 @@ Dropdown.propTypes = {
   /** placement of pop menu: bottomLeft bottomCenter bottomRight topLeft topCenter topRight */
   placement: string,
   /** the trigger mode which executes the drop-down action	Array<click|hover> */
-  trigger: array,
+  trigger: arrayOf(string),
   /** whether the dropdown menu is visible */
   visible: bool,
   /** a callback function takes an argument: visible, is executed when the visible state is changed	Function(visible) */
