@@ -14,7 +14,60 @@ yarn run styleguide
 TODO:
 - [x] Configure webpack's `modifyVars`
 - [x] Configure Styleguidist to load modified AntD components
-- [ ] Add AntD's entire component library
 - [ ] More documentation -- particularly any places where modifying globals causes weird behavior.
+- [ ] Add AntD's entire component library
+- - [ ] affix
+- - [ ] alert
+- - [ ] anchor
+- - [x] auto-complete
+- - [ ] avatar
+- - [ ] back
+- - [ ] badge
+- - [ ] breadcrumb
+- - [x] button
+- - [ ] calendar
+- - [ ] card
+- - [ ] carousel
+- - [ ] cascader
+- - [ ] checkbox
+- - [ ] col
+- - [ ] collapse
+- - [ ] date
+- - [x] dropdown
+- - [ ] form
+- - [ ] grid
+- - [x] icon
+- - [ ] input
+- - [ ] input
+- - [ ] layout
+- - [ ] locale
+- - [ ] mention
+- - [x] menu
+- - [ ] message
+- - [ ] modal
+- - [ ] notification
+- - [x] pagination
+- - [ ] popconfirm
+- - [ ] popover
+- - [ ] progress
+- - [ ] radio
+- - [ ] rate
+- - [ ] row
+- - [ ] select
+- - [ ] slider
+- - [ ] spin
+- - [x] steps
+- - [ ] style
+- - [ ] switch
+- - [ ] table
+- - [ ] tabs
+- - [ ] tag
+- - [ ] time
+- - [ ] timeline
+- - [ ] tooltip
+- - [ ] transfer
+- - [ ] tree
+- - [ ] tree
+- - [ ] upload
 
 ***This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).***
