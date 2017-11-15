@@ -1,5 +1,14 @@
 import React from 'react'
-import { arrayOf, bool, element, func, object, string, shape, oneOfType } from 'prop-types'
+import {
+  arrayOf,
+  bool,
+  element,
+  func,
+  object,
+  string,
+  shape,
+  oneOfType
+} from 'prop-types'
 import { AutoComplete as AntAutoComplete, Input } from 'antd'
 
 function onSelect(value) {
@@ -45,27 +54,27 @@ class AutoComplete extends React.Component {
     /** Whether active first option by default */
     defaultActiveFirstOption: bool,
     /** Initial selected option. - string|string[]|{ key: string, label: string|`ReactNode` }|Array<{ key: string, label: string|`ReactNode` }> */
-    defaultValue: oneOfType(
+    defaultValue: oneOfType([
       string,
       arrayOf(string),
-      shape({ key: string, label: oneOfType(string, element) }),
-      arrayOf(shape({ key: string, label: oneOfType(string, element) }))
-    ),
+      shape({ key: string, label: oneOfType([string, element]) }),
+      arrayOf(shape({ key: string, label: oneOfType([string, element]) }))
+    ]),
     /** Whether disabled select */
     disabled: bool,
     /** If true, filter options by input, if function, filter options against it. The function will receive two arguments, inputValue and option, if the function, returns true, the option will be included in the filtered set; Otherwise, it will be excluded. */
-    filterOption: oneOfType(bool, func),
+    filterOption: oneOfType([bool, func]),
     /** Which prop value of option will render as content of select. */
     optionLabelProp: string,
     /** placeholder of input. */
     placeholder: string,
     /** selection option */
-    value: oneOfType(
+    value: oneOfType([
       string,
       arrayOf(string),
-      shape({ key: string, label: oneOfType(string, element) }),
-      arrayOf(shape({ key: string, label: oneOfType(string, element) }))
-    ),
+      shape({ key: string, label: oneOfType([string, element]) }),
+      arrayOf(shape({ key: string, label: oneOfType([string, element]) }))
+    ]),
     /** Called when select an option or input value change, or value of input is changed	function(value, label) */
     onChange: func,
     /** Called when searching items.	function(value) */

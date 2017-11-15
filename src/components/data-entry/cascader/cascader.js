@@ -45,7 +45,9 @@ function onChange(value) {
   console.log(value)
 }
 
-const Cascader = props => <AntCascader options={options} onChange={onChange} {...props} />
+const Cascader = props => (
+  <AntCascader options={options} onChange={onChange} {...props} />
+)
 
 Cascader.propTypes = {
   /** whether allow clear */
@@ -79,14 +81,19 @@ Cascader.propTypes = {
   /** use preset popup align config from builtinPlacements: <br /> `bottomLeft`, `bottomRight`, `topLeft`, `topRight`*/
   popupPlacement: string,
   /** Whether show search input in single mode. One of: `object|bool` */
-  showSearch: oneOfType(),
+  showSearch: oneOfType([object, bool]),
   /** input size, one of `large` `default` `small` */
   size: string,
   /** additional style NOTE: Shouldn't this be `object`? */
   style: string,
   /** selected value
    * @see [CascaderOptionType[]](https://git.io/vMMoK) */
-  value: shape({ value: string, label: string, disabled: bool, children: object }),
+  value: shape({
+    value: string,
+    label: string,
+    disabled: bool,
+    children: object
+  }),
   /** callback when finishing cascader select <br /> signature: `(value, selectedOptions) => void`*/
   onChange: func,
   /** callback when popup shown or hidden <br /> signature: `(value) => void` */
