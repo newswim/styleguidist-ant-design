@@ -1,12 +1,24 @@
 import React from 'react'
 import { bool, string, func, object, oneOfType } from 'prop-types'
 import { DatePicker as AntDatePicker } from 'antd'
+const { MonthPicker, RangePicker, WeekPicker } = AntDatePicker;
 
 function onChange(date, dateString) {
   console.log(date, dateString)
 }
 
-const DatePicker = props => <AntDatePicker onChange={onChange} {...props} />
+const DatePicker = props => (
+  <div>
+    <AntDatePicker onChange={onChange} {...props} />
+    <br />
+    <MonthPicker onChange={onChange} placeholder="Select month" {...props} />
+    <br />
+    <RangePicker onChange={onChange} {...props} />
+    <br />
+    <WeekPicker onChange={onChange} placeholder="Select week" {...props} />
+  </div>
+
+)
 
 DatePicker.propTypes = {
   /** Whether to show clear button */

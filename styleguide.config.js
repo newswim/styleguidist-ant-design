@@ -2,9 +2,6 @@ const theme = require('./theme.js')
 const { injectBabelPlugin } = require('react-app-rewired')
 const rewireLess = require('react-app-rewire-less')
 
-// NOTE: Use 'util' to print a deeply nested object to console
-// const util = require('util')
-
 module.exports = {
   styleguideDir: 'docs',
   // components: './node_modules/antd/es/**/index.js',
@@ -17,7 +14,6 @@ module.exports = {
     webpackConfig = rewireLess.withLoaderOptions({
       modifyVars: theme
     })(webpackConfig, env)
-    // console.log(util.inspect(webpackConfig, { showHidden: false, depth: null }))
     return webpackConfig
   }
 }
