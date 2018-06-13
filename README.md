@@ -11,9 +11,13 @@ yarn install
 yarn run styleguide
 ```
 
-TODO:
+For more info on how this all works, check out [this issue](https://github.com/newswim/styleguidist-ant-design/issues/3).
+
+
+### TODO:
 - [x] Configure webpack's `modifyVars`
 - [x] Configure Styleguidist to load modified AntD components
+- [ ] Update to most recent AntD
 - [ ] More documentation -- particularly any places where modifying globals causes weird behavior.
 - [ ] Add AntD's entire component library
 - - [ ] affix
